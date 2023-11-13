@@ -1,0 +1,1 @@
+// ini adlah admin php
