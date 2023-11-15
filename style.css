@@ -1,0 +1,60 @@
+body {
+  background-color: chocolate;
+  color: white;
+}
+header {
+  width: 100%;
+  background-color: white;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+}
+
+.nav a {
+  color: white;
+  padding: 14px;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul li {
+  background-color: chocolate;
+  margin: 3px;
+  height: 43px;
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.btn {
+  background-color: chocolate;
+  color: pink;
+  font-weight: bold;
+}
+
+p {
+  font-size: 25px;
+}
+
+.left {
+  background-color: white;
+  color: chocolate;
+}
+
+footer {
+  background-color: black;
+}
+.top {
+  margin-top: 60px;
+}
