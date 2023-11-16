@@ -29,20 +29,22 @@
                 <button class="btn" type="button">Products</button>
             </div>
         </div>
+        <br>
         <div class="prod">
+            <h1 class="h1">Our Products</h1>
             <div class="row">
                 <div>
-                    <img src="assets/donut.jpg" width="170px" height="150px">
+                    <img src="assets/donut.jpg" width="170px" height="150px" style="border-radius: 100px">
                     <h2>Donuts</h2>
                     <p>Donuts</p>
-                    <p><a class="btn" href="#">Buy Now &raquo;</a></p>
+                    <p class="bgambar"><a class="btn" href="#">Buy Now &raquo;</a></p>
                 </div>
                 <div>
-                    <div>
-                        <img src="assets/donut.jpg" width="170px" height="150px">
+                    <div class="setelah_row">
+                        <img src="assets/donut.jpg" width="170px" height="150px" style="border-radius: 100px">
                         <h2>Drinks</h2>
                         <p>Drinks</p>
-                        <p><a class="btn" href="#">Buy Now &raquo;</a></p>
+                        <p class="bgambar"><a class="btn" href="#">Buy Now &raquo;</a></p>
                     </div>
                 </div>
             </div>
@@ -51,11 +53,12 @@
         <div class="row align-items-md-stretch">
             <div class="col-md-6">
                 <div>
-                    <img src="https://i.pinimg.com/736x/68/a7/ac/68a7aca2ca222f71b72b743adc07fb08.jpg" alt="">
+                    <img src="https://i.pinimg.com/736x/68/a7/ac/68a7aca2ca222f71b72b743adc07fb08.jpg"
+                        style="border-radius: 20px;" alt="">
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="left h-100 p-5 bg-body-tertiary border rounded-3">
+            <div class="left">
+                <div>
                     <h2>Donuts</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestias, a repellendus
                         explicabo nulla dignissimos! Minus non, animi ratione distinctio neque quos nesciunt quis.
@@ -66,9 +69,10 @@
         </div>
         </div>
     </main>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+    <br><br>
+    <footer>
+        <div>
+            <a href="/">
                 <svg class="bi" width="30" height="24">
                     <use xlink:href="#bootstrap" />
                 </svg>
