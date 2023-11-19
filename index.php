@@ -1,7 +1,3 @@
-<?php
-require "session.php";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +16,7 @@ require "session.php";
             <ul class="nav">
                 <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Etc</a></li>
+                <li class="nav-item"><a href="admin.php" class="nav-link">Etc</a></li>
             </ul>
         </div>
     </header>
@@ -86,6 +82,7 @@ require "session.php";
         </div>
 
     </footer>
+
 </body>
 
 </html>
