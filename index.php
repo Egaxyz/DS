@@ -1,88 +1,135 @@
+<?php
+require "conn.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Donut Store</title>
     <style>
     <?php include "style.css"?>
     </style>
 </head>
 
 <body>
-    <header>
-        <div class="head">
-            <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
-                <li class="nav-item"><a href="admin.php" class="nav-link">Etc</a></li>
+    <header class="header">
+        <nav>
+            <div class="nav__logo"><a href="#" id="warna">DStore</a></div>
+            <ul class="nav__links" id="nav-links">
+                <li class="link"><a href="index.php">Home</a></li>
+                <li class="link"><a href="#choose">About</a></li>
+                <li class="link"><a href="#donutt">Product</a></li>
             </ul>
+            <div class="nav__menu__btn" id="menu-btn">
+                <span><i class="ri-menu-line"></i></span>
+            </div>
+            <div class="nav__actions">
+                <span><a href="admin.php">
+                        <i class="ri-search-fill">
+                            <button class="btn btn__primary">Login as Admin</button>
+                        </i>
+                    </a>
+                </span>
+            </div>
+        </nav>
+        <div class="section__container header__container" id="home">
+            <h1>Donut Store</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab rerum itaque quae placeat nesciunt
+                quisquam, enim soluta inventore voluptas architecto distinctio atque ipsa consequuntur id totam, vero
+                voluptatibus, porro laborum.
+            </p>
+
         </div>
     </header>
+
     <main>
-        <div>
-            <div>
-                <h1 class="top">DStore</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis sunt
-                    vel cupiditate fugit, officia velit explicabo ullam, sequi repudiandae architecto hic molestias!
-                    Provident quas saepe nemo, maxime dicta doloribus.</p>
-                <button class="btn" type="button">Products</button>
-            </div>
-        </div>
-        <br>
-        <div class="prod">
-            <h1 class="h1">Our Products</h1>
-            <div class="row">
-                <div>
-                    <img src="assets/donut.jpg" width="170px" height="150px" style="border-radius: 100px">
-                    <h2>Donuts</h2>
-                    <p>Donuts</p>
-                    <p class="bgambar"><a class="btn" href="#">Buy Now &raquo;</a></p>
-                </div>
-                <div>
-                    <div class="setelah_row">
-                        <img src="assets/donut.jpg" width="170px" height="150px" style="border-radius: 100px">
-                        <h2>Drinks</h2>
-                        <p>Drinks</p>
-                        <p class="bgambar"><a class="btn" href="#">Buy Now &raquo;</a></p>
+        <section class="section__container choose__container" id="choose">
+            <div class="choose__content">
+                <h2 class="section__header">Donut Store is</h2>
+                <p class="section__subheader">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut porro facilis quidem saepe? Obcaecati,
+                    sit. Quam beatae a perspiciatis cupiditate totam, itaque, magnam dolore commodi odio aspernatur
+                    dolorem repellendus optio.
+                </p>
+                <div class="choose__grid">
+                    <div class="little-card c-b">
+                        <span><i class="ri-truck-line"></i></span>
+                        <h4>Fast & Free Shipping</h4>
+                        <p>
+                            Elevate your interior design with our Fast & Free Shipping service
+                            without delay
+                        </p>
+                    </div>
+                    <div class="little-card c-p">
+                        <span><i class="ri-shopping-bag-3-line"></i></span>
+                        <h4>Easy to Shop</h4>
+                        <p>
+                            Discover Effortless Elegance: Explore Our Easy-to-Shop Interior
+                            Design Solutions
+                        </p>
+                    </div>
+                    <div class="little-card c-p">
+                        <span><i class="ri-customer-service-2-line"></i></span>
+                        <h4>24/7 Support</h4>
+                        <p>
+                            my donut only 24/7 hours because
+                            people likedonut like me loveyou
+                            :3333333333
+                        </p>
+                    </div>
+                    <div class="little-card c-b">
+                        <span><i class="ri-loop-right-line"></i></span>
+                        <h4>Buy And Get In Now!</h4>
+                        <p>
+                            I need money so buy more
+                            donu is good for you
+                            lets go buy now
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="row align-items-md-stretch">
-            <div class="col-md-6">
-                <div>
-                    <img src="https://i.pinimg.com/736x/68/a7/ac/68a7aca2ca222f71b72b743adc07fb08.jpg"
-                        style="border-radius: 20px;" alt="">
+            <div class="choose__image">
+                <img src="assets/donud.jpg" alt="choose" />
+            </div>
+        </section>
+
+        <section class="offer__container" id="offer">
+            <div class="offer__grid__top">
+                <img src="assets/offer1.jpg" alt="offer" />
+                <img src="assets/offer7.jpg" alt="offer" />
+                <img src="assets/offer3.jpg" alt="offer" />
+                <div class="offer__content">
+                    <h2 class="section__header">Our Product</h2>
+                    <p class="section__subheader">
+                        Explore exclusive deals to transform your body with donut
+                    </p>
+                    <button class="btn">Buy Now</button>
                 </div>
             </div>
-            <div class="left">
-                <div>
-                    <h2>Donuts</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestias, a repellendus
-                        explicabo nulla dignissimos! Minus non, animi ratione distinctio neque quos nesciunt quis.
-                        Laboriosam veritatis eos non voluptatem fugiat!</p>
-                    <button class="btn" type="button">Products</button>
-                </div>
+            <div class="offer__grid__bottom">
+                <img src="assets/offer.jpg" alt="offer" />
+                <img src="assets/offer4.jpg" alt="offer" />
+                <img src="assets/offer6.jpg" alt="offer" />
             </div>
-        </div>
-        </div>
-    </main>
-    <br><br>
-    <footer>
-        <div>
-            <a href="/">
-                <svg class="bi" width="30" height="24">
-                    <use xlink:href="#bootstrap" />
-                </svg>
-            </a>
-            <span class="mb-3 mb-md-0 text-body-secondary">&copy; Donut Store</span>
-        </div>
+        </section>
 
-    </footer>
-
+        <footer class="footer">
+            <div class="section__container footer__bar">
+                <div class="footer__logo">
+                    <h4><a href="#">Donut Store</a></h4>
+                    <p>Copyright © 2023 Donut Store. All rights reserved.</p>
+                </div>
+                <ul class="footer__nav">
+                    <li class="footer__link"><a href="#">Home</a></li>
+                    <li class="footer__link"><a href="#">Products</a></li>
+                    <li class="footer__link"><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </footer>
 </body>
 
 </html>

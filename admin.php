@@ -11,6 +11,11 @@ require "conn.php";
     <title>Document</title>
     <link rel="stylesheet" href="assets/bootstrap.min.css">
     <style>
+    body {
+        background-color: #2f2f2f;
+        color: white;
+    }
+
     .main {
         height: 100vh;
     }
@@ -20,12 +25,14 @@ require "conn.php";
         height: 300px;
         box-sizing: border-box;
         border-radius: 10px;
+        background-color: #71717a;
     }
     </style>
 </head>
 
 <body>
     <div class="main d-flex flex-column justify-content-center align-items-center">
+        <h1>Login as Admin</h1>
         <div class="login-box p-5 shadow">
             <form action="" method="post">
                 <div>
@@ -37,7 +44,10 @@ require "conn.php";
                     <input type="password" name="password" class="form-control" id="password">
                 </div>
                 <div>
-                    <button type="submit" class="btn btn-success form-control mt-3" name="loginbtn">Login</button>
+                    <button type="submit" class="btn btn-outline-dark form-control mt-3" name="loginbtn">Login</button>
+                </div>
+                <div>
+                    <a href="index.php" class="btn btn-outline-light form-control mt-2">Back</a>
                 </div>
             </form>
         </div>
