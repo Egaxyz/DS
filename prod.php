@@ -39,17 +39,33 @@ require "conn.php";
                 quisquam, enim soluta inventore voluptas architecto distinctio atque ipsa consequuntur id totam, vero
                 voluptatibus, porro laborum.
             </p>
-            <form method="get" action="/">
+            <form method="get" action="prod.php">
                 <input type="text" placeholder="Search Donut" name="keyword" />
-                <button type="button" class="btn btn-warning">Telusuri</button>
+                <button class="btn btn-warning" type="submit">Telusuri</button>
             </form>
             <a href="#home"><i class="ri-arrow-down-double-line"></i></a>
         </div>
     </header>
     <main>
-
+        <div class="container-fluid py-5">
+            <div class="container text-center">
+                <h3>Kategori</h3>
+                <div class="row mt-3" style="margin-left: 300px">
+                    <div class="col-3">
+                        <div class="highlighted-kategori img-donut d-flex justify-content-center align-items-center">
+                            <h4 class="text-white"><a href="prod.php?kategori=Donat">Donuts</a></h4>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="highlighted-kategori img-drink d-flex justify-content-center align-items-center">
+                            <h4 class="text-white">Drinks</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="section__container footer__bar">
             <div class="footer__logo">
                 <h4><a href="#">Donut Store</a></h4>
@@ -61,7 +77,7 @@ require "conn.php";
                 <li class="footer__link"><a href="#">Login</a></li>
             </ul>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
