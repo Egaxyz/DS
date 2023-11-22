@@ -1,1 +1,1 @@
-// ini adlah admin php
+// ini adalah php my admin 
