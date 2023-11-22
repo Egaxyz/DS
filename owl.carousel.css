@@ -1,9 +1,7 @@
-
 .owl-carousel {
   display: none;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
-
   position: relative;
   z-index: 1;
 }
@@ -22,7 +20,6 @@
 .owl-carousel .owl-stage-outer {
   position: relative;
   overflow: hidden;
-
   -webkit-transform: translate3d(0px, 0px, 0px);
 }
 .owl-carousel .owl-item {
@@ -76,7 +73,6 @@
 .owl-carousel.owl-rtl .owl-item {
   float: right;
 }
-
 
 .no-js .owl-carousel {
   display: block;
