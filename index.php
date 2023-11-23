@@ -9,7 +9,6 @@ require "conn.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donut Store</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
     <?php include "style.css"?>
     </style>
@@ -22,16 +21,11 @@ require "conn.php";
             <ul class="nav__links" id="nav-links">
                 <li class="link"><a href="index.php">Home</a></li>
                 <li class="link"><a href="#choose">About</a></li>
-                <li class="link"><a href="#donutt">Product</a></li>
+                <li class="link"><a href="prod.php">Product</a></li>
             </ul>
-            <div class="nav__menu__btn" id="menu-btn">
-                <span><i class="ri-menu-line"></i></span>
-            </div>
             <div class="nav__actions">
                 <span><a href="admin.php">
-                        <i class="ri-search-fill">
-                            <button class="btn btn__primary">Login as Admin</button>
-                        </i>
+                        Login
                     </a>
                 </span>
             </div>
@@ -102,7 +96,7 @@ require "conn.php";
             <div class="offer__grid__top">
                 <img src="assets/offer1.jpg" alt="offer" />
                 <img src="assets/offer7.jpg" alt="offer" />
-                <img src="assets/offer3.jpg" alt="offer" />
+                <img src="assets/hot-chocolate1.jpg" alt="offer" />
                 <div class="offer__content">
                     <h2 class="section__header">Our Product</h2>
                     <p class="section__subheader">
@@ -113,95 +107,25 @@ require "conn.php";
             </div>
             <div class="offer__grid__bottom">
                 <img src="assets/offer.jpg" alt="offer" />
-                <img src="assets/offer4.jpg" alt="offer" />
+                <img src="assets/coffee.jpg" alt="offer" />
                 <img src="assets/offer6.jpg" alt="offer" />
             </div>
         </section>
+    </main>
 
-        <footer class="footer">
-            <div class="section__container footer__bar">
-                <div class="footer__logo">
-                    <h4><a href="#">Donut Store</a></h4>
-                    <p>Copyright © 2023 Donut Store. All rights reserved.</p>
-                </div>
-                <ul class="footer__nav">
-                    <li class="footer__link"><a href="#">Home</a></li>
-                    <li class="footer__link"><a href="#">Products</a></li>
-                    <li class="footer__link"><a href="#">Login</a></li>
-                </ul>
+    <footer class="footer">
+        <div class="section__container footer__bar">
+            <div class="footer__logo">
+                <h4><a href="#">Donut Store</a></h4>
+                <p>Copyright © 2023 Donut Store. All rights reserved.</p>
             </div>
-        </footer>
-
-        <div class="container-fluid py-5">
-            <div class="container text-center">
-                <h3>Produk</h3>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                                <img src="assets/offer2.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                                <img src="assets/offer2.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                                <img src="assets/offer2.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                                <img src="assets/offer2.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                                <img src="assets/offer2.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                                <img src="assets/offer2.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <ul class="footer__nav">
+                <li class="footer__link"><a href="#">Home</a></li>
+                <li class="footer__link"><a href="#">Products</a></li>
+                <li class="footer__link"><a href="#">Login</a></li>
+            </ul>
         </div>
-
-        <script src="js/bootstrap.min.js"></script>
+    </footer>
 </body>
 
 </html>
