@@ -495,3 +495,6 @@ tr {
 .text-white {
   color: var(--white);
 }
+#logout:hover {
+  color: var(--text-light);
+}

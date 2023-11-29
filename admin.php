@@ -62,8 +62,8 @@ require "conn.php";
             $countdata= mysqli_num_rows($query);
             $data = mysqli_fetch_array($query);
                 if ($countdata > 0) {
-                    if(isset($password, $data['password'])) {
-                        header('location: index.php');
+                    if(isset($password, $data["password"])) {
+                        header("location: home-admin.php");
                         exit();
                     }
                     else{

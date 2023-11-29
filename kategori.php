@@ -21,7 +21,7 @@ $jumlahKategori = mysqli_num_rows($queryKategori);
         <nav>
             <div class="nav__logo"><a href="#" id="warna"><a href="index.php">DStore</a></div>
             <ul class="nav__links nav-kategori" id="nav-links">
-                <li class="link"><a href="index.php">Home</a></li>
+                <li class="link"><a href="home-admin.php">Home</a></li>
                 <li class="link"><a href="#choose">About</a></li>
                 <li class="link"><a href="prod.php">Product</a></li>
             </ul>
@@ -46,31 +46,30 @@ $jumlahKategori = mysqli_num_rows($queryKategori);
                             <th>Nama
                                 <hr>
                             </th>
+
                         </tr>
                     </thead>
                     <tbody>
                         <?php
-                    $number = 1;
-                        while($data=mysqli_fetch_array($queryKategori)){
-                            if($jumlahKategori==0){
-                    ?>
+                        if ($jumlahKategori== 0) {
+                            ?>
                         <tr>
-                            <td>Tidak ada kategori</td>
+                            <td colspan="2" class="text-center">Data Kategori tidak tersedia</td>
                         </tr>
                         <?php
-                        }
-                        else{
-                    ?>
+                        } else {
+                            $jumlah = 1;
+                            while ($data = mysqli_fetch_array($queryKategori)) {
+                                ?>
                         <tr>
-                            <td><?php echo $number;?></td>
-                            <td><?php echo $data['nama'];?></td>
-
+                            <td><?php echo $jumlah; ?></td>
+                            <td><?php echo $data['nama']; ?></td>
                         </tr>
                         <?php
+                        $jumlah++;
+                            }
                         }
-                        $number++;
-                    }
-                    ?>
+                        ?>
                     </tbody>
                 </table>
             </div>
