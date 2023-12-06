@@ -37,7 +37,7 @@ require "conn.php";
             <form action="" method="post">
                 <div>
                     <label for="username">Username</label>
-                    <input type="text" name="username" class="form-control" id="username">
+                    <input type="text" name="username" autocomplete="off" class="form-control" id="username">
                 </div>
                 <div>
                     <label for="password">Password</label>
@@ -54,6 +54,7 @@ require "conn.php";
 
         <div class="mt-3" style="width:500px; text-align:center;">
             <?php
+
         if (isset($_POST["loginbtn"])) {
             $username = htmlspecialchars_decode($_POST["username"]);
             $password = htmlspecialchars_decode($_POST["password"]);
@@ -62,7 +63,7 @@ require "conn.php";
             $countdata= mysqli_num_rows($query);
             $data = mysqli_fetch_array($query);
                 if ($countdata > 0) {
-                    if(isset($password, $data["password"])) {
+                    if(password_verify($password, $data["new_password"])) {
                         header("location: home-admin.php");
                         exit();
                     }

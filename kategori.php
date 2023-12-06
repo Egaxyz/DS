@@ -22,12 +22,12 @@ $jumlahKategori = mysqli_num_rows($queryKategori);
             <div class="nav__logo"><a href="#" id="warna"><a href="index.php">DStore</a></div>
             <ul class="nav__links nav-kategori" id="nav-links">
                 <li class="link"><a href="home-admin.php">Home</a></li>
-                <li class="link"><a href="#choose">About</a></li>
-                <li class="link"><a href="prod.php">Product</a></li>
+                <li class="link"><a href="kategori.php">Kategori</a></li>
+                <li class="link"><a href="product.php">Product</a></li>
             </ul>
             <div class="nav__actions">
-                <span><a href="admin.php">
-                        Login
+                <span><a href="logout.php">
+                        Logout
                     </a>
                 </span>
             </div>
@@ -46,6 +46,7 @@ $jumlahKategori = mysqli_num_rows($queryKategori);
                             <th>Nama
                                 <hr>
                             </th>
+
 
                         </tr>
                     </thead>
