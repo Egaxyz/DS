@@ -8,7 +8,7 @@ require "conn.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donut Store</title>
+    <title>Admin</title>
     <style>
     <?php include "style.css"?>
     </style>
@@ -20,12 +20,12 @@ require "conn.php";
             <div class="nav__logo"><a href="#" id="warna">DStore</a></div>
             <ul class="nav__links" id="nav-links">
                 <li class="link"><a href="index.php">Home</a></li>
-                <li class="link"><a href="#choose">About</a></li>
+                <li class="link"><a href="kategori.php">Kategori</a></li>
                 <li class="link"><a href="prod.php">Product</a></li>
             </ul>
             <div class="nav__actions">
-                <span><a href="admin.php">
-                        Login
+                <span id="logout">
+                    Logout
                     </a>
                 </span>
             </div>
@@ -126,6 +126,22 @@ require "conn.php";
             </ul>
         </div>
     </footer>
+    <script>
+    alert('Welcome Admin');
+
+    document.getElementById('logout').addEventListener('click', function() {
+
+        var isConfirmed = confirm('Yakin Mau Keluar?');
+        if (isConfirmed) {
+            window.location.href = 'logout.php';
+        } else {
+
+            event.preventDefault();
+        }
+
+    });
+    </script>
+
 </body>
 
 </html>
