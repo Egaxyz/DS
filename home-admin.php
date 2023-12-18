@@ -22,6 +22,7 @@ require "conn.php";
                 <li class="link"><a href="index.php">Home</a></li>
                 <li class="link"><a href="kategori.php">Kategori</a></li>
                 <li class="link"><a href="prod.php">Product</a></li>
+                <li class="link"><a href="transaki.php">Pembayaran</a></li>
             </ul>
             <div class="nav__actions">
                 <span id="logout">
